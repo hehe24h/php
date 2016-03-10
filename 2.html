@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+
+
+		<style type="text/css">
+.videoWrapper {
+    position: relative;
+    padding-bottom: 100%;  /* 1:1 */
+    padding-top: 0px;
+    height: 0;
+}
+.videoWrapper object, .videoWrapper embed, {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #ccc;
+    margin: 0;
+}
+#container {
+    width: 400px;
+    /* Fixed width according to page template */
+    height: auto;
+    /* Container height should adapt to the content, we do not want to set a fixed height here */
+    background-color: pink;
+    /* Background of container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#flash-content {
+    width: 400px;
+    /* Fill the width of the parent, could be fixed but ideally 100% */
+    height: 100%;
+    /* We want the height of the flash object/flash content to scale according to the aspect ratio of the swf, we do not want to set a fixed height here */
+}
+/* This is what we really want */
+ #what-we {
+    width: 400px;
+    height: auto;
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#really-want {
+    width: 100%;
+    height: 100%;
+    /* This is what we really want, but without setting this height fixed */
+    background-color: yellow;
+}
+		</style>
+	</head>
+	<body>
+
+<div id="container">
+    <div class="videoWrapper">
+        <div id="flash-content"></div>
+    </div>
+</div>
+<div id="what-we">
+    <div id="really-want">
+
+<object id="flash_object" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" name="flash_object" height="100%" align="middle" width="100%">
+									<param value="always" name="allowScriptAccess">
+									<param name="scale" value="exactFit">
+									<param value="internal" name="allowNetworking">
+									<param value="http://gamecdn.gamepilot.com/data/3/0/6/30601.swf" name="movie">
+									<param value="direct" name="wmode">
+									<param value="#FFFFFF" name="bgcolor">
+									<embed id="flash_object_embed" bgcolor="#FFFFFF" wmode="direct" allownetworking="internal" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://gamecdn.gamepilot.com/data/3/0/6/30601.swf" scale="exactFit" name="flash_object_embed" height="100%" align="middle" width="100%">
+									</object>
+    </div>
+</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="Hello World"></script>
+	</body>
+</html>
